@@ -8,28 +8,32 @@
   .tag__info {
     margin: 48px 0;
   }
-  
+
   .tag__title {
     position: relative;
     margin-bottom: 0;
-    font-size: 48px;
-    text-transform: capitalize;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #e8e8f8;
   }
-  
+
   .tag__counter {
     position: absolute;
     top: -10px;
-    padding: 3px 8px;
+    padding: 2px 8px;
     min-width: 26px;
     min-height: 26px;
-    font-family: $base-font-family;
-    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 1.4;
-    font-weight: 500;
     text-align: center;
-    border-radius: 40px;
-    color: var(--heading-font-color);
-    background-color: var(--background-alt-color);
+    border-radius: 0;
+    color: #fff;
+    background-color: #9d00ff;
   }
 
   @media (max-width: $tablet) {
@@ -38,21 +42,20 @@
     }
 
     .tag__title {
-      font-size: 35px;
+      font-size: 32px;
     }
 
     .tag__counter {
       padding: 2px 6px;
       min-width: 20px;
       min-height: 20px;
-      font-size: 12px;
-      line-height: 1.3;
+      font-size: 11px;
     }
   }
 
   @media (max-width: $mobile) {
     .tag__title {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 }

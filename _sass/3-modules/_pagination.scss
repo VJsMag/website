@@ -4,4 +4,30 @@
   justify-content: center;
   align-items: center;
   margin-top: 16px;
+
+  a, span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7070a0;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #222238;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #fff;
+      border-color: #9d00ff;
+      background: rgba(157, 0, 255, 0.1);
+    }
+  }
+
+  .current {
+    color: #fff;
+    background: #9d00ff;
+    border-color: #9d00ff;
+  }
 }

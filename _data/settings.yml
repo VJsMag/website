@@ -1,10 +1,10 @@
 #-------------------------------
 # Site Settings
 title: VJs Mag
-description: Your source for the latest in vj technology and culture
-logo: "/images/logo.svg" # You can add own logo. For example "/images/logo.svg".
+description: The press and media platform for live visual performances, VJ culture, and audiovisual art
+logo: "/images/logo.svg"
 logo_dark: "/images/logo-dark.svg"
-color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+color_scheme: dark
 
 
 #-------------------------------
@@ -43,16 +43,16 @@ cta_button:
 # Hero Settings
 hero:
   enable: true
-  hero_title: 
-  hero_description: 
+  hero_title: Live Performance Press
+  hero_description: News, reviews, interviews, and deep-dives into the world of live visual art and VJ culture.
 
 
 #-------------------------------
 # Tags Section Settings
 tags_section:
   enable: true
-  number_posts: 3 # To control how many posts to show under each tag section, set the value to a number. Three is the default.
-  number_columns: 3 # You can specify the number of columns from 1-4 for large screen resolution. By default, the theme uses three columns grid.
+  number_posts: 3
+  number_columns: 3
   tags:
     - tag: "news"
     - tag: "spotlight"
@@ -60,19 +60,17 @@ tags_section:
     - tag: "technology"
     - tag: "tutorials"
 
-# You can add many tag sections to the homepage; each section will show the recent posts by the tag.
-
 
 #-------------------------------
 # Authors Section Settings
 authors_section:
   enable: true
-  section_title: Meet our authors
+  section_title: Meet our writers
 
 
 #-------------------------------
 # Footer Settings
-footer_description: Your source for the latest in vj technology and culture.
+footer_description: The press and media platform for live visual performances, VJ culture, and audiovisual art. Part of the VJs TV network.
 
 
 # Social Links
@@ -82,41 +80,34 @@ social:
 - {icon: "instagram", link: "https://instagram.com/vjsmag"}
 - {icon: "discord", link: "https://discord.gg/Mnn6aVjvCZ"}
 - {icon: "linkedin", link: "https://linkedin.com/company/vjsmag"}
-- {icon: "pinterest", link: "https://pinterest.com/vjsmag/"}
 - {icon: "youtube", link: "https://www.youtube.com/user/vjstv"}
 - {icon: "vimeo", link: "https://vimeo.com/vjstv"}
 - {icon: "rss", link: "https://www.vjsmag.com/feed"}
-
-# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
-# Other icons can be found at https://ionicons.com/v4/
 
 
 #-------------------------------
 # Newsletter Settings
 mailchimp_settings:
   enable: true
-  mailchimp_title: Get interesting news
-  mailchimp_description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
-  mailchimp_identifier: https://vjsmag.us22.list-manage.com/subscribe?u=04b35b1905693c4daca7b592a&id=89e5d17e3e # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp_input_text: Your email address
+  mailchimp_title: Stay in the loop
+  mailchimp_description: New articles, artist features & live performance coverage — straight to your inbox.
+  mailchimp_identifier: https://vjsmag.us22.list-manage.com/subscribe?u=04b35b1905693c4daca7b592a&id=89e5d17e3e
+  mailchimp_input_text: your@email.com
   mailchimp_button_text: Subscribe
 
 
 #-------------------------------
 # Contact Settings
 contact:
-  email: vjsmag@gmail.com # Add your form_id
-  description: We are always happy to hear from our customers, partners, and visitors. Whether you have a question, comment, suggestion, or just want to say hello, we are here to listen. Our dedicated team is ready to assist you with any inquiries or concerns you may have. Please don’t hesitate to reach out to us using the form provided on this page, or through the contact information listed below. We look forward to connecting with you! # Add a description of your form
-
-# NOTE
-# You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+  email: vjsmag@gmail.com
+  description: We are always happy to hear from our customers, partners, and visitors. Whether you have a question, comment, suggestion, or just want to say hello, we are here to listen. Our dedicated team is ready to assist you with any inquiries or concerns you may have. Please don't hesitate to reach out to us using the form provided on this page, or through the contact information listed below. We look forward to connecting with you!
 
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+disqus_identifier: anvod-studio-test
 
 
 #-------------------------------
 # Google Analytics
-google_analytics: # Add your GA Tracking Id
+google_analytics:

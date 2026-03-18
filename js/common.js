@@ -4,60 +4,61 @@ document.addEventListener("DOMContentLoaded", function() {
   const html = document.querySelector('html'),
     globalWrap = document.querySelector('.global-wrap'),
     body = document.querySelector('body'),
-    menuToggle = document.querySelector(".hamburger"),
-    menuList = document.querySelector(".main-nav"),
+    hamburger = document.querySelector(".vjsmag-nav__hamburger"),
+    navLinks = document.querySelector(".vjsmag-nav__links"),
     searchOpenButton = document.querySelector(".search-button"),
     searchCloseIcon = document.querySelector(".icon__search__close"),
     searchOverlay = document.querySelector(".search__overlay"),
     searchInput = document.querySelector(".search__text"),
     search = document.querySelector(".search"),
-    toggleTheme = document.querySelector(".toggle-theme"),
     btnScrollToTop = document.querySelector(".top");
 
 
   /* =======================================================
-  // Menu + Search + Theme Switcher
+  // Menu + Search
   ======================================================= */
-  menuToggle.addEventListener("click", () => {
-    menu();
-  });
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("is-open");
+      navLinks.classList.toggle("is-open");
+    });
+  }
 
-  searchOpenButton.addEventListener("click", () => {
-    searchOpen();
-  });
+  if (searchOpenButton) {
+    searchOpenButton.addEventListener("click", () => {
+      searchOpen();
+    });
+  }
 
-  searchCloseIcon.addEventListener("click", () => {
-    searchClose();
-  });
+  if (searchCloseIcon) {
+    searchCloseIcon.addEventListener("click", () => {
+      searchClose();
+    });
+  }
 
-  searchOverlay.addEventListener("click", () => {
-    searchClose();
-  });
-
-
-  // Menu
-  function menu() {
-    menuToggle.classList.toggle("is-open");
-    menuList.classList.toggle("is-visible");
+  if (searchOverlay) {
+    searchOverlay.addEventListener("click", () => {
+      searchClose();
+    });
   }
 
 
   // Search
   function searchOpen() {
-    search.classList.add("is-visible");
-    body.classList.add("search-is-visible");
-    globalWrap.classList.add("is-active");
-    menuToggle.classList.remove("is-open");
-    menuList.classList.remove("is-visible");
+    if (search) search.classList.add("is-visible");
+    if (body) body.classList.add("search-is-visible");
+    if (globalWrap) globalWrap.classList.add("is-active");
+    if (hamburger) hamburger.classList.remove("is-open");
+    if (navLinks) navLinks.classList.remove("is-open");
     setTimeout(function () {
-      searchInput.focus();
+      if (searchInput) searchInput.focus();
     }, 250);
   }
 
   function searchClose() {
-    search.classList.remove("is-visible");
-    body.classList.remove("search-is-visible");
-    globalWrap.classList.remove("is-active");
+    if (search) search.classList.remove("is-visible");
+    if (body) body.classList.remove("search-is-visible");
+    if (globalWrap) globalWrap.classList.remove("is-active");
   }
 
   document.addEventListener('keydown', function(e){
@@ -67,36 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  // Theme Switcher
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
-
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
-      document.documentElement.removeAttribute("dark");
-    } else {
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("dark", "");
-    }
-  };
-
-
   /* ================================================================
-  // Stop Animations During Window Resizing and Switching Theme Modes
+  // Stop Animations During Window Resizing
   ================================================================ */
   let disableTransition;
-
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      stopAnimation();
-    });
-  }
 
   window.addEventListener("resize", () => {
     stopAnimation();
@@ -167,14 +142,16 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================
   // Scroll Top Button
   ======================= */
-  btnScrollToTop.addEventListener("click", function () {
-    if (window.scrollY != 0) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      })
-    }
-  });
+  if (btnScrollToTop) {
+    btnScrollToTop.addEventListener("click", function () {
+      if (window.scrollY != 0) {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        })
+      }
+    });
+  }
 
 });

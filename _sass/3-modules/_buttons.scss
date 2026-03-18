@@ -2,27 +2,30 @@
 .button {
   display: inline-flex;
   align-items: center;
-  padding: 8px 18px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 500;
+  padding: 10px 24px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
   text-decoration: none;
-  border-radius: 60px;
+  border-radius: 0;
   border: none;
   outline: none;
-  color: var(--button-color);
-  background: var(--button-background-color);
+  color: #fff;
+  background: #9d00ff;
   transition: $global-transition;
   will-change: transform;
   cursor: pointer;
 
   &:hover {
-    color: var(--button-color);
-    background: var(--button-background-hover);
+    color: #fff;
+    background: #b030ff;
   }
 
   &--big {
-    padding: 14px 24px;
+    padding: 14px 28px;
   }
 
   i {

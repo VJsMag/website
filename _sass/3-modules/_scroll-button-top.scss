@@ -2,28 +2,28 @@
 .top {
   display: flex;
   align-items: center;
-  font-size: 16px;
-  color: var(--heading-font-color);
+  font-size: 14px;
+  color: #7070a0;
   cursor: pointer;
+  transition: color 0.2s ease;
 
   &:hover {
-    .top__text {
-      text-decoration-color: var(--heading-font-color);
-    }
+    color: #e8e8f8;
   }
 
   .top__text {
     margin-left: 8px;
-    font-size: 15px;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
   }
 
   @media (max-width: $tablet) {
     .top__text {
-      font-size: 14px;
+      font-size: 11px;
     }
   }
 }

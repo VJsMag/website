@@ -8,7 +8,7 @@
 }
 
 .section__inner {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #222238;
 }
 
 .section__info {
@@ -29,20 +29,29 @@
 
 .section__title {
   margin-bottom: 0;
-  font-size: 32px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #e8e8f8;
 
   @media (max-width: $mobile) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
 .section__link {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9d00ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
 
   &:hover {
-    text-decoration-color: var(--heading-font-color);
+    color: #b030ff;
   }
 }

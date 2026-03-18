@@ -12,7 +12,8 @@
 }
 
 .contact-description {
-  font-size: 18px;
+  font-size: 16px;
+  color: #7070a0;
 
   @media (max-width: $mobile) {
     font-size: inherit;
@@ -30,21 +31,22 @@
 .form__input {
   width: 100%;
   padding: 16px 0;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
   font-weight: 400;
   border: none;
-  border-bottom: 1.5px solid var(--border-color);
+  border-bottom: 1px solid #222238;
   outline: 0;
   transition: $global-transition;
   resize: vertical;
-  color: var(--heading-font-color);
-  background: var(--background-color);
+  color: #e8e8f8;
+  background: transparent;
 
   &::placeholder {
-    color: var(--heading-font-color);
+    color: #7070a0;
   }
 
   &:focus {
-    border-color: var(--primary-color);
+    border-color: #9d00ff;
   }
 }

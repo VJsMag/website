@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>VJs Mag</title>
-        <description>Your source for the latest in vj technology and culture</description>
+        <description>The press and media platform for live visual performances, VJ culture, and audiovisual art</description>
         <link>http://0.0.0.0:5000/</link>
         <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 18 Mar 2026 16:05:28 +0000</pubDate>
-        <lastBuildDate>Wed, 18 Mar 2026 16:05:28 +0000</lastBuildDate>
+        <pubDate>Wed, 18 Mar 2026 16:16:16 +0000</pubDate>
+        <lastBuildDate>Wed, 18 Mar 2026 16:16:16 +0000</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>

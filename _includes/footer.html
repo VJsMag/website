@@ -1,38 +1,75 @@
-<!-- begin footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
+<footer class="vjsmag-footer" role="contentinfo">
+  <div class="vjsmag-footer__top">
+    <div class="container">
+      <div class="vjsmag-footer__grid">
 
-        <div class="footer__inner">
-          <div class="row">
-            {% include footer-widgets/widget-info.html %}
-            {% include footer-widgets/widget-recent-posts.html %}
-            {% include footer-widgets/widget-subscribe.html %}
+        <div class="vjsmag-footer__brand">
+          <div class="vjsmag-footer__logo-text">VJs MAG</div>
+          <p class="vjsmag-footer__tagline">{{ site.data.settings.footer_description }}</p>
+          {% if site.data.settings.social %}
+          <div class="vjsmag-footer__social">
+            {% for social in site.data.settings.social %}
+            <a href="{{ social.link }}" target="_blank" rel="noopener" title="{{ social.icon | capitalize }}">
+              <i class="ion ion-logo-{{ social.icon }}"></i>
+            </a>
+            {% endfor %}
           </div>
+          {% endif %}
         </div>
 
-        <div class="footer__info">
-          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. All Rights Reserved.</div> 
-          <div class="footer__info__right">
-            {% if site.data.settings.color_scheme == "auto" %}
-            <div class="toggle-theme">
-              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true"><i class="ion ion-ios-moon"></i> <span class="toggle-text">Dark</span></div>
-              <div class="toggle-sun" title="Enable light mode" aria-hidden="true"><i class="ion ion-ios-sunny"></i> <span class="toggle-text">Light</span></div>
-            </div>
-            {% elsif site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
-            {% else %}
-            <div class="toggle-theme">
-              <div class="toggle-moon" title="Enable dark mode"><i class="ion ion-ios-moon" aria-hidden="true"></i></div>
-              <div class="toggle-sun" title="Enable light mode"><i class="ion ion-ios-sunny" aria-hidden="true"></i></div>
-            </div>
-            {% endif %}
-            <div class="top" title="Top"><i class="ion-md-arrow-round-up"></i> <span class="top__text">Back to top</span></div>
-          </div>
+        <div class="vjsmag-footer__col">
+          <div class="vjsmag-footer__heading">Magazine</div>
+          <a href="/">Home</a>
+          <a href="/latest/">Latest</a>
+          <a href="/authors/">Authors</a>
+          <a href="/videos/">Videos</a>
+          <a href="/submit/">Submit</a>
+        </div>
+
+        <div class="vjsmag-footer__col">
+          <div class="vjsmag-footer__heading">Discover</div>
+          {% for item in site.data.settings.tags_section.tags %}
+          <a href="/tags/?tag={{ item.tag | downcase | url_encode }}">{{ item.tag | capitalize }}</a>
+          {% endfor %}
+        </div>
+
+        <div class="vjsmag-footer__col">
+          <div class="vjsmag-footer__heading">Network</div>
+          <a href="https://vjstv.com" target="_blank" rel="noopener">VJs TV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:0.7em; height:0.7em; display:inline-block; vertical-align:middle; margin-left:3px;"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></a>
+          <a href="/about/">About</a>
+          <a href="/partners/">Partners</a>
+          <a href="/contact/">Contact</a>
         </div>
 
       </div>
     </div>
   </div>
+
+  {% if site.data.settings.mailchimp_settings.enable == true %}
+  <div class="vjsmag-footer__newsletter">
+    <div class="container">
+      <div class="vjsmag-footer__newsletter-inner">
+        <div class="vjsmag-footer__newsletter-text">
+          <span class="vjsmag-footer__newsletter-title">{{ site.data.settings.mailchimp_settings.mailchimp_title }}</span>
+          <span class="vjsmag-footer__newsletter-sub">{{ site.data.settings.mailchimp_settings.mailchimp_description }}</span>
+        </div>
+        <form class="vjsmag-footer__newsletter-form" action="https://vjsmag.us22.list-manage.com/subscribe?u=04b35b1905693c4daca7b592a&id=89e5d17e3e" method="POST" target="_blank" novalidate>
+          <input type="email" name="EMAIL" placeholder="{{ site.data.settings.mailchimp_settings.mailchimp_input_text }}" required>
+          <button type="submit">{{ site.data.settings.mailchimp_settings.mailchimp_button_text }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="vjsmag-footer__bar">
+    <div class="container">
+      <div class="vjsmag-footer__bar-inner">
+        <span class="vjsmag-footer__copyright">{{ site.time | date: '%Y' }} &copy; <a href="/">{{ site.data.settings.title }}</a>. All Rights Reserved.</span>
+        <div class="vjsmag-footer__bar-right">
+          <div class="top" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-<!-- end footer -->

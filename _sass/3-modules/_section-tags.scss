@@ -14,13 +14,15 @@
   display: block;
   height: 0;
   padding-bottom: 62%;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
-  background: var(--background-alt-color);
+  background: #111120;
+  border: 1px solid #222238;
   transition: transform .2s;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    border-color: #9d00ff;
   }
 
   img {
@@ -39,17 +41,18 @@
     z-index: 1;
     max-width: 90%;
     display: inline-block;
-    padding: 8px 12px;
-    font-size: 14px;
-    line-height: 1;
+    padding: 6px 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    border-radius: 4px;
-    color: var(--heading-font-color);
-    background: var(--background-color);
+    border-radius: 0;
+    color: #fff;
+    background: rgba(157, 0, 255, 0.85);
     pointer-events: none;
   }
 }
