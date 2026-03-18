@@ -1,0 +1,59 @@
+[
+  
+    {
+      "title"  : "Mapping Festival 2023 Celebrates Low Tech Art",
+      "url"    : "/latest/mapping-festival-2023",
+      "date"   : "07 May 2023",
+      "image"  : "/images/mapping-festival-2023.jpg"
+    } ,
+  
+    {
+      "title"  : "VJBooking, Revolutionizing Event Visuals through Artist Recruitment",
+      "url"    : "/latest/vjbooking-event-recruitment",
+      "date"   : "07 May 2023",
+      "image"  : "/images/vjbooking-event-recruitment.png"
+    } ,
+  
+    {
+      "title"  : "Bright Festival Florence 2023, A Celebration of Digital Creativity and Innovation",
+      "url"    : "/latest/bright-festival-florence-2023",
+      "date"   : "28 March 2023",
+      "image"  : "/images/bright-festival-florence-2023.jpg"
+    } ,
+  
+    {
+      "title"  : "10 Popular Video Synthesizers",
+      "url"    : "/latest/10-popular-video-synthesizers",
+      "date"   : "07 January 2023",
+      "image"  : "/images/10-popular-video-synthesizers.png"
+    } ,
+  
+    {
+      "title"  : "AI Server, The Powerhouse Media Server Software for Large Scale Shows",
+      "url"    : "/latest/ai-server-the-powerhouse-media-server-software",
+      "date"   : "30 December 2022",
+      "image"  : "/images/Synergy_Web.jpg"
+    } ,
+  
+    {
+      "title"  : "Experience High-Quality Video with the V-600UHD",
+      "url"    : "/latest/experience-high-quality-video-with-the-v-600uhd",
+      "date"   : "03 November 2022",
+      "image"  : "/images/hero_sp.jpg"
+    } ,
+  
+    {
+      "title"  : "Videopong, A Community for VJs, Content Creators, and Video Artists",
+      "url"    : "/latest/videopong-community",
+      "date"   : "30 September 2022",
+      "image"  : "/images/videopong.png"
+    } ,
+  
+    {
+      "title"  : "LPM 2022 Rome, A Celebration of Audio Visual Performing Arts",
+      "url"    : "/latest/lpm-2022-rome",
+      "date"   : "15 June 2022",
+      "image"  : "/images/LPM2022-main.jpg"
+    } 
+  
+]
